@@ -1,0 +1,116 @@
+.main {
+    min-height: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f1f1f1;
+}
+
+.bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+            to right top,
+            rgba(6, 11, 20, 1),
+            rgba(6, 12, 23, 0.85),
+            rgba(6, 12, 26, 0.85),
+            rgba(7, 13, 28, 0.85),
+            rgba(8, 13, 31, 0.85),
+            rgba(8, 12, 31, 0.85),
+            rgba(8, 12, 32, 0.85),
+            rgba(8, 11, 32, 0.85),
+            rgba(7, 10, 30, 0.85),
+            rgba(6, 9, 28, 0.85),
+            rgba(4, 7, 26, 0.85),
+            rgba(3, 6, 24, 1)
+    ),
+    url("../public/static/images/back-soon-background.jpg");
+}
+
+.title span {
+    color: #0079ff;
+}
+
+.title {
+    line-height: 1.15;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 5rem;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.socials a {
+    text-align: center;
+}
+
+.social {
+    width: 100%;
+}
+
+.email {
+    width: 15rem;
+    height: 3.5rem;
+
+    font-size: 1.5rem;
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.45);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    margin-bottom: 3.25rem;
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .socials {
+        gap: 3rem;
+    }
+
+    .social {
+        width: 75%;
+    }
+
+    .email {
+        width: 11.25rem;
+        height: 2.625rem;
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .socials {
+        gap: .5rem;
+    }
+
+    .social {
+        width: 50%;
+    }
+
+    .email {
+        width: 7.5rem;
+        height: 2.25rem;
+        font-size: 1rem;
+    }
+}
