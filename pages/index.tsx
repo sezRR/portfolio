@@ -8,7 +8,7 @@ const Home: NextPage = () => {
             <Head>
                 <title>Sezer Tetik</title>
                 <meta name="description" content="Sezer Tetik portfolio website"/>
-                <link rel="icon" href="/favicon.ico"/>
+                <link rel="icon" href="/static/images/favicon.ico"/>
             </Head>
 
             <div className={styles.bg}>
