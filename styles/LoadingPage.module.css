@@ -1,0 +1,55 @@
+.mainContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    letter-spacing: 0.03em;
+    background-image: url("../public/static/images/background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.informationContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.jobInformation {
+    font-weight: 300;
+    font-size: 24px;
+
+    color: #4C6595;
+}
+
+.information {
+    margin-bottom: 4rem;
+
+    font-weight: 500;
+    font-size: 48px;
+
+    color: #BCD3FF;
+}
+
+@keyframes a {
+    0% { transform: rotate(0deg) }
+    50% { transform: rotate(180deg) }
+    100% { transform: rotate(360deg) }
+}
+.loadingMarker .loadingMarkerSettings {
+    animation: a 1s linear infinite;
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    box-shadow: 0 0.15625rem 0 0 #BCD3FF;
+    transform-origin: 3.125rem 3.203125rem;
+}
+
+.loadingMarker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(0) scale(1);
+}
