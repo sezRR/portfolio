@@ -5,7 +5,7 @@
     justify-content: center;
 
     letter-spacing: 0.03em;
-    background-image: url("../public/static/images/background.svg");
+    background-image: url("../public/static/images/background.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }

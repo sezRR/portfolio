@@ -11,7 +11,6 @@ const LoadingPage: NextPage = () => {
                     <div className={styles.loadingMarkerSettings}></div>
                 </div>
             </div>
-
         </main>
     )
 }
