@@ -1,5 +1,6 @@
 import type {NextPage} from 'next'
 import styles from '../styles/LandingPage.module.css'
+import Loading from "../components/Loading/Loading";
 
 const LandingPage: NextPage = () => {
     return (
@@ -13,11 +14,7 @@ const LandingPage: NextPage = () => {
                         <h6 className={styles.jobSpec}>Software Developer</h6>
                         <h1 className={styles.name}>Sezer Tetik</h1>
                     </article>
-                    <section>
-                        <div className={styles.loadingMarker}>
-                            <div className={styles.loadingMarkerSettings}></div>
-                        </div>
-                    </section>
+                    <Loading/>
                 </div>
             </div>
         </main>
