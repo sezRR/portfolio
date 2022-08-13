@@ -4,7 +4,8 @@ const Loading = () => {
     return (
         <section>
             <div className={styles.loadingMarker}>
-                <div className={styles.loadingMarkerSettings}></div>
+                <img src="static/images/spinner.png" alt="spinner" width="64" height="64"/>
+                {/*<div className={styles.loadingMarkerSettings}></div>*/}
             </div>
         </section>
     )

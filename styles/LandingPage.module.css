@@ -3,6 +3,8 @@
     background-image: url("../public/static/images/background.webp");
     background-size: cover;
     background-repeat: no-repeat;
+
+    overflow: hidden;
 }
 
 .landingContainer {
@@ -17,33 +19,55 @@
 .logOutput { grid-area: 1 / 4 / 5 / 6; }
 
 .centerContent {
-    grid-area: 1 / 3 / 5 / 4;
+    grid-area: 1 / 1 / 5 / 6;
 
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 4em;
     align-items: center;
     justify-content: center;
-    margin-top: 7.9rem;
+    margin-top: 7.9em;
     text-align: center;
 }
 
 .information {
-    margin-top: 6.25rem;
+    margin-top: 7.5%;
 }
 
 .jobSpec {
-    margin-bottom: .5rem;
+    margin-bottom: .5em;
 
     font-weight: 300;
-    font-size: 24px;
+    font-size: 1.5rem;
 
     color: #4C6595;
 }
 
 .name {
     font-weight: 500;
-    font-size: 48px;
+    font-size: 3rem;
 
     color: #BCD3FF;
+}
+
+@media (max-width: 425px) {
+    .name {
+        font-size: 2.25rem;
+    }
+
+    .jobSpec {
+        font-size: 1.125rem;
+        color: #4C6595;
+    }
+}
+
+@media (max-width: 190px) {
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .jobSpec {
+        font-size: .75rem;
+        color: #4C6595;
+    }
 }

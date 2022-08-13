@@ -18,3 +18,10 @@
     align-items: center;
     transform: translateZ(0) scale(1);
 }
+
+@media (max-width: 425px) {
+    .loadingMarker img {
+        height: 48px;
+        width: 48px;
+    }
+}
